@@ -18,6 +18,7 @@ function App() {
         <Navigation />
           <main>
             <Routes>
+              <Route path="/" element={<Pets />} />
               <Route path="/pets" element={<Pets />} />
               <Route path="/pets/:petId" element={<PetDetails />} />
               <Route path="/favorites" element={<Favorites />} />
