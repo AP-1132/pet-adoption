@@ -1,3 +1,3 @@
 # Netlify Link
 
-https://ap-422-pet-adoption.netlify.app/
+https://ap-422-pet-adoption.netlify.app/pets
