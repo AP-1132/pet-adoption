@@ -5,11 +5,11 @@ import { useFavorites } from "../context/FavoritesContext.jsx";
 export default function PetDetailsPage() {
   const { petId } = useParams();
 
-  const { getPet } = usePets();
+  const { getPets } = usePets();
   const { toggleFavorite, isFavorite } = useFavorites();
 
   const id = Number(petId);
-  const pet = Number.isInteger(id) ? getPet(id) : undefined;
+  const pet = Number.isInteger(id) ? getPets(id) : undefined;
 
   if (!pet) {
     return <h1>Pets not found</h1>;

@@ -7,15 +7,23 @@ export default function PetCard({ pet }) {
     const favorited = isFavorite(pet.id);
 
     return (
-        <div className="pet-card">
-            <h2>{pet.name}</h2>
-            <p>Type: {pet.species}</p>
-            <p>Age: {pet.age}</p>
-            <p>Description: {pet.description}</p>
-            <button onClick={() => toggleFavorite(pet.id)}>
-                {favorited ? 'Remove from Favorites' : 'Add to Favorites'}
-            </button>
-            <Link to={`/pets/${pet.id}`}>View Details</Link>
-        </div>
+        <article className="pet-card">
+            <div className="pet-card-header">
+                <div>
+                    <h2>{pet.name}</h2>
+                    <span className="pet-species">{pet.species}</span>
+                </div>
+            </div>
+            <div className="pet-meta">
+                <span>{pet.age} {pet.age === 1 ? 'year' : 'years'} old</span>
+            </div>
+            <p className="pet-description">{pet.description}</p>
+            <div className="pet-actions">
+                <button onClick={() => toggleFavorite(pet.id)}>
+                    {favorited ? 'Remove favorite' : 'Add to favorites'}
+                </button>
+                <Link to={`/pets/${pet.id}`}>View details</Link>
+            </div>
+        </article>
     );
 }

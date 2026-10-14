@@ -4,15 +4,18 @@ import PetCard from '../components/PetCard.jsx'
 
 export default function Favorites() {
     const { pets } = usePets();
-    const { favorites } = useFavorites();
+    const { favoriteIds } = useFavorites();
 
-    const favoritePets = pets.filter((pet) => favorites.includes(pet.id));
+    const favoritePets = pets.filter((pet) => favoriteIds.includes(pet.id));
 
     return (
         <div>
-            <h1>My Favorite Pets</h1>
+            <div className="page-heading">
+                <h1>My favorite pets</h1>
+                <p>Keep track of the pets who have captured your heart.</p>
+            </div>
             {favoritePets.length === 0 ? (
-                <p>No Favorites Yet</p>
+                <p className="empty-state">No favorites yet. Add a pet to see it here.</p>
             ) : (
                 <div className="pet-list">
                     {favoritePets.map((pet) => (
