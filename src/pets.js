@@ -1,0 +1,73 @@
+export const pets = [
+  {
+    id: 1,
+    name: "Buddy",
+    species: "Dog",
+    age: 3,
+    description: "A friendly and energetic dog who loves to play fetch.",
+  },
+  {
+    id: 2,
+    name: "Whiskers",
+    species: "Cat",
+    age: 2,
+    description: "A curious and playful cat who enjoys chasing toys.",
+  },
+  {
+    id: 3,
+    name: "Charlie",
+    species: "Dog",
+    age: 5,
+    description: "A loyal and gentle dog who loves long walks.",
+  },
+  {
+    id: 4,
+    name: "Luna",
+    species: "Cat",
+    age: 1,
+    description: "A sweet and affectionate kitten who loves cuddles.",
+  },
+  {
+    id: 5,
+    name: "Max",
+    species: "Dog",
+    age: 2,
+    description: "A playful and energetic dog who loves to run and play.",
+  },
+  {
+    id: 6,
+    name: "Mittens",
+    species: "Cat",
+    age: 4,
+    description: "A calm and independent cat who enjoys lounging in the sun.",
+  },
+  {
+    id: 7,
+    name: "Rocky",
+    species: "Guinea Pig",
+    age: 1,
+    description:
+      "A cute and friendly guinea pig who loves to explore and play.",
+  },
+  {
+    id: 8,
+    name: "Coco",
+    species: "Rabbit",
+    age: 3,
+    description: "A gentle and affectionate rabbit who loves to be petted.",
+  },
+  {
+    id: 9,
+    name: "Bella",
+    species: "Bird",
+    age: 2,
+    description: "A beautiful and melodious bird who loves to sing.",
+  },
+  {
+    id: 10,
+    name: "Rock",
+    species: "Turtle",
+    age: 24,
+    description: "A slow and steady turtle who enjoys basking in the sun.",
+  },
+];
